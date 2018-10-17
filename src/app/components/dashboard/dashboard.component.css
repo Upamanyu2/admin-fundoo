@@ -1,0 +1,32 @@
+.logo{
+    margin-right: 42%;
+    font-size: 20px;
+    font-family: Cambria; 
+    
+}
+.logout{
+    opacity: 0.9;
+}
+.image{
+    height:4%; 
+    width: 4%;
+    margin-right: 41%;
+}
+.card-right{
+    /* width: 45%; */
+    height: 200px;
+    /* float: right; */
+    opacity: 0.5;
+    border: 0%;
+    border-radius: 5%;
+    background-color: rgba(255, 228, 196, 0.527);
+}
+.card-left{
+    /* width: 45%; */
+    height: 200px;
+    /* float: left; */
+    opacity: 0.5;
+    border: 0%;
+    border-radius: 5%;
+    background-color: rgba(255, 228, 196, 0.527);
+}
