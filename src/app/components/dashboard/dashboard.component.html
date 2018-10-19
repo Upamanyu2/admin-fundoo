@@ -5,45 +5,112 @@
          <div></div>
          <div>
             <nav class="navbar justify-content-end navbar-expand-sm bg-dark navbar-dark sticky-top">
-                <!-- <img src="../../../assets/images/Admin.png" class="image" /> -->
+                
                   <span class="navbar-brand logo"> <em>FUNDOO</em></span>
                     <ul class="nav nav-pills">
                       <li class="nav-item active">
-                        <a class="nav-link active logout" data-toggle="pill" href="#">Logout</a>
+                        <a class="nav-link active logout" id="logout" data-toggle="pill" href="#">Logout</a>
                       </li>
                     </ul>
                   </nav>
+
+        </div>
                   <div class="d-flex flex-column">
-                      <div class="p-5"></div>
+                        <div class="p-5"></div>
                       <div class="row">
 
-                          <div class="col-sm-1"></div>
-
-                          <div class="col-sm-4">
-                              <div class="card-right">
-                                  <div class="text-black">
-                                      <div class="card-body"><span class="text-center">Admin</span></div>
-                                    </div>
-                              </div>  
-                                 </div>
-                                  <div class="col-sm-2"></div>
-                          <div class="col-sm-4">
-                              <div class="card-left">
-                                  <div class="text-black">
-                                      <div class="card-body"><span class="text-center">Basic</span></div>
-                                    </div>
-                          </div>  
-                            </div>
-
-                            <div class="col-sm-1"></div>
+                          <div class="col-xs-0 col-sm-0 col-md-3 col-lg-3"></div>
+                          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
+                              <div class="row" id="services"></div>  
+                          </div>       
+                          <div class="col-xs-0 col-sm-0 col-md-3 col-lg-3"></div>
                         
-                          </div>
-                  </div>    
-          </div>
+                      </div>
+                      <div class="p-5"></div>
+                  </div> 
+         
+              <div class="d-flex flex-column" > 
+                  <div class="p-2"></div>
+                  <div class="table">
+                        <table id="users">
+                                <thead style="background-color:black; color: white">
+                                    <tr>
+                                        <th scope="col">Sno</th>
+                                        <th scope="col">First Name</th>
+                                        <th scope="col">Last Name</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">Service</th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                
+                                </table>
+
+                                <div class="container">
+                                    
+                                   
+                  
+
+
+
+
+
+                                  
+                  </div>
+                   <div class="p-2"></div>
+              </div>        
+                    
+                      
+                  
+                  
+          
           <div ></div>
       </div>
         
     </div>
     <div class="p-0"></div>
-    
+
 </div>
+
+
+
+
+       
+        
+
+
+
+
+
+
+
+
+ <button type="button" id="btnpopop" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="display:none">Open Small Modal</button>
+      
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color:black; color:white">
+                
+            <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+            <span><h6 class="modal-title"id="lblFname">Modal Header</h6></span>
+            
+          </div>
+          <div class="modal-body">
+            <p id="mail"></p>
+            <p id="serv"></p>
+            <p id="username"></p>
+            <p id="phonenumber"></p>
+            <p id="role"></p>
+            <p id="serv"></p>
+            <p id="created_date"></p>
+            <p id="verification"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>

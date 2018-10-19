@@ -7,26 +7,9 @@
 .logout{
     opacity: 0.9;
 }
-.image{
-    height:4%; 
-    width: 4%;
-    margin-right: 41%;
+.table{
+    overflow-x: auto;
 }
-.card-right{
-    /* width: 45%; */
-    height: 200px;
-    /* float: right; */
-    opacity: 0.5;
-    border: 0%;
-    border-radius: 5%;
-    background-color: rgba(255, 228, 196, 0.527);
-}
-.card-left{
-    /* width: 45%; */
-    height: 200px;
-    /* float: left; */
-    opacity: 0.5;
-    border: 0%;
-    border-radius: 5%;
-    background-color: rgba(255, 228, 196, 0.527);
+.fade{
+    opacity: 1 !important;
 }

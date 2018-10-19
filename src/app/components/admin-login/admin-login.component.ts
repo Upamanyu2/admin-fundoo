@@ -14,6 +14,10 @@ export class AdminLoginComponent implements OnInit {
     
     $(document).ready(function(){
       const Url='http://34.213.106.173/api/user/adminLogin';
+      let email =$("#email").val();
+      let password =$("#email").val();
+      $(".error").remove();
+      
       $("#button").click(function(){
         var body={
           "email":$("#email").val(),
@@ -25,7 +29,8 @@ export class AdminLoginComponent implements OnInit {
            data: body,
            success: function(result){
              console.log(result);
-             window.location.href=("/admin-dashboard");
+             localStorage.setItem("token",result.id);
+             window.location.href="/admin-dashboard";
            },
            error: function(error){
              console.log(`Error ${error}`)

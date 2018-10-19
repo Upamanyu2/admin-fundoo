@@ -16,3 +16,11 @@ font-size: 80%;
   .btn{
       color: white;
   }
+  .error {
+    color: red;
+    margin-left: 5px;
+  }
+   
+  label.error {
+    display: inline;
+  }
