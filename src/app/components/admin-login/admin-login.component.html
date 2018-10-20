@@ -1,39 +1,62 @@
-<div  class="d-flex flex-column">
-        
-           
-      <div class="p-5">
-          <div class="row">
-            <div class="col"></div>
-            <div  class="col" class="card text-center" style="width:50%">
-                <div class="card-header">
-                  <h1 class="card-title">
-                    <span class="B">F</span>
-                    <span class="R">U</span>
-                    <span class="Y">N</span>
-                    <span class="B">D</span>
-                    <span class="R">O</span>
-                    <span class="G">O</span>
-                  </h1>
-                    <h4 class="card-title">Admin login</h4>
-                    <!-- <p class="card-text">For admin to login please provide email and password</p> -->
+<div  class="d-flex flex-column">    <!--Outside div opening-->
+  <div class="p-5"></div>    <!--Padding at the top to bring the card in the middle-->
+  <div class="p-5"></div>    <!--Padding at the top to bring the card in the middle-->
+  <div class="p-5"></div>    <!--Padding at the top to bring the card in the middle-->
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------->           
+  <!--Form div--> 
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------->     
+  <!--Card div-->   
+         <div class="p-5">
+            <div class="row">
+              <div class="col"></div>
+              <div  class="col" class="card text-center" style="width:45%; height: 100%">
+                  <div class="card-header" style="background-color:black">
+                    <h1 class="card-title">
+                      <span class="B">F</span>    
+                      <span class="R">U</span>
+                      <span class="Y">N</span>
+                      <span class="B">D</span>
+                      <span class="R">O</span>
+                      <span class="G">O</span>
+                    </h1>
+                      <h4 class="card-title" style="color:white">Admin Login</h4>
+                      
                   </div>
-                  <div class="card-body">
-                     
-                      <div class="form-group row">
-                          <label for="usr">Name:</label>
-                          <input id="email" type="text" class="form-control">
-                        </div>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------->      
+  <!--Card body-->  
+<form id="admin-login-form">        
+                    <div class="card-body" style="margin-left:7px; margin-right:7px">
+                   <!--Input div for email-->   
                         <div class="form-group row">
-                          <label  for="pwd">Password:</label>
-                          <input id="password" type="password" class="form-control">
-                        </div>  
-                  </div>
-                  <div class="card-footer text-muted">
-                      <a id="button" class="btn btn-primary"><span class="btn">Login</span></a> 
+                            <label for="usr">Email:</label>
+                            <input id="email" type="text" type="email" class="form-control" required/>
+                            <div class="alert alert-warning" id="Email_error"><strong >Email field is required</strong></div>
+                            <div class="alert alert-warning" id="Email_error1"><strong >Provide a valid email id</strong></div>
+                            
+                          </div>
+                   <!--Input div for password-->
+                          <div class="form-group row">
+                            <label  for="pwd">Password:</label>
+                            <input id="password" type="password" class="form-control" required/>
+                            <div class="alert alert-warning"  id="Password_error"><strong>Password field is required</strong></div>  
+                            <div class="alert alert-warning" id="Password_error1"><strong>Password should be of minimum 6 characters</strong></div>
+                          </div>  
                     </div>
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------->   
+  <!--Card footer-->  
+  <!--Button div for submitting the email and password-->               
+                    <div class="card-footer " style="background-color:black">
+                        <a id="button" class="btn btn-primary"><span class="btn">Login</span></a> 
+                      </div>
+</form>                     
+                </div>
+              <div class="col"></div>
               </div>
-            <div class="col"></div>
-            </div>
-      </div>
-      <div class="p-5"></div>
-</div>
+        </div>
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------->      
+      <div class="p-5"></div>        <!--Padding at the bottom to bring the card in the middle-->
+</div>                               <!--Outside div closing-->
